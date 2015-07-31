@@ -48,6 +48,8 @@ def browse_wiki_random_articles(): #makes decision to browse and store subjects 
 	cursor.close() #close cursor
 	sql_connection.close() #close connection
 	txt_file.close() #close file
+	
+	
 def get_random_articles(): #gets random articles
 	connection = urllib.urlopen(WIKI_RANDOM)
 	response =  connection.read()
