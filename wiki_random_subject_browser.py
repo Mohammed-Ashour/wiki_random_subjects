@@ -35,7 +35,6 @@ def show_detailed_data(cursor):
     where wikisubs.id = favourite.id ''')
     all_rows = cursor.fetchall()
     for row in all_rows:
-    # row[0] returns the first column in the query (name), row[1] returns email column.
         print('{0} : {1}, {2}'.format(row[0], row[1], row[2]))
 
     
